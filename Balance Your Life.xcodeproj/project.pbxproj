@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		47D1BE7E2BC8F8E9004992AA /* Balance_Your_LifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE7D2BC8F8E9004992AA /* Balance_Your_LifeApp.swift */; };
+		47D1BE802BC8F8E9004992AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE7F2BC8F8E9004992AA /* ContentView.swift */; };
+		47D1BE822BC8F8E9004992AA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE812BC8F8E9004992AA /* Item.swift */; };
+		47D1BE842BC8F8EA004992AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BE832BC8F8EA004992AA /* Images.xcassets */; };
+		47D1BE872BC8F8EA004992AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BE862BC8F8EA004992AA /* Preview Assets.xcassets */; };
+		47D1BE942BC9020D004992AA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BE932BC9020D004992AA /* Colors.xcassets */; };
+		47D1BE972BC90234004992AA /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE962BC90234004992AA /* AppImage.swift */; };
+		47D1BE992BC9023F004992AA /* AppImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE982BC9023F004992AA /* AppImageProtocol.swift */; };
+		47D1BE9B2BC904AE004992AA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE9A2BC904AE004992AA /* SplashScreenView.swift */; };
+		47D1BE9F2BC91019004992AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BE9E2BC91019004992AA /* Constants.swift */; };
+		47D1BEA62BC91227004992AA /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BEA22BC91227004992AA /* SF-Pro-Display-Bold.otf */; };
+		47D1BEA72BC91227004992AA /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BEA32BC91227004992AA /* SF-Pro-Display-Medium.otf */; };
+		47D1BEA82BC91227004992AA /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BEA42BC91227004992AA /* SF-Pro-Display-Semibold.otf */; };
+		47D1BEA92BC91227004992AA /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47D1BEA52BC91227004992AA /* SF-Pro-Display-Regular.otf */; };
+		47D1BEAC2BC91247004992AA /* AppFontProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEAB2BC91247004992AA /* AppFontProtocol.swift */; };
+		47D1BEAE2BC91351004992AA /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEAD2BC91351004992AA /* AppFont.swift */; };
+		47D1BEB12BC9193E004992AA /* AppColorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEB02BC9193E004992AA /* AppColorProtocol.swift */; };
+		47D1BEB32BC91AE0004992AA /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEB22BC91AE0004992AA /* AppColor.swift */; };
+		47D1BEB52BC939BB004992AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEB42BC939BB004992AA /* AppDelegate.swift */; };
+		47D1BEB72BC93F05004992AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1BEB62BC93F05004992AA /* SceneDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		47D1BE7A2BC8F8E9004992AA /* Balance Your Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Balance Your Life.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D1BE7D2BC8F8E9004992AA /* Balance_Your_LifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance_Your_LifeApp.swift; sourceTree = "<group>"; };
+		47D1BE7F2BC8F8E9004992AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		47D1BE812BC8F8E9004992AA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		47D1BE832BC8F8EA004992AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		47D1BE862BC8F8EA004992AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		47D1BE932BC9020D004992AA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		47D1BE962BC90234004992AA /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		47D1BE982BC9023F004992AA /* AppImageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImageProtocol.swift; sourceTree = "<group>"; };
+		47D1BE9A2BC904AE004992AA /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		47D1BE9E2BC91019004992AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		47D1BEA22BC91227004992AA /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		47D1BEA32BC91227004992AA /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		47D1BEA42BC91227004992AA /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		47D1BEA52BC91227004992AA /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		47D1BEAB2BC91247004992AA /* AppFontProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontProtocol.swift; sourceTree = "<group>"; };
+		47D1BEAD2BC91351004992AA /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		47D1BEAF2BC913E5004992AA /* Balance-Your-Life-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Balance-Your-Life-Info.plist"; sourceTree = SOURCE_ROOT; };
+		47D1BEB02BC9193E004992AA /* AppColorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorProtocol.swift; sourceTree = "<group>"; };
+		47D1BEB22BC91AE0004992AA /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		47D1BEB42BC939BB004992AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47D1BEB62BC93F05004992AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47D1BE772BC8F8E9004992AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47D1BE712BC8F8E9004992AA = {
+			isa = PBXGroup;
+			children = (
+				47D1BE7C2BC8F8E9004992AA /* Balance Your Life */,
+				47D1BE7B2BC8F8E9004992AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47D1BE7B2BC8F8E9004992AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE7A2BC8F8E9004992AA /* Balance Your Life.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47D1BE7C2BC8F8E9004992AA /* Balance Your Life */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BEAF2BC913E5004992AA /* Balance-Your-Life-Info.plist */,
+				47D1BE8E2BC8FA40004992AA /* Source */,
+				47D1BE852BC8F8EA004992AA /* Preview Content */,
+			);
+			path = "Balance Your Life";
+			sourceTree = "<group>";
+		};
+		47D1BE852BC8F8EA004992AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE862BC8F8EA004992AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47D1BE8D2BC8FA2F004992AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE952BC9021C004992AA /* Images */,
+				47D1BEA12BC910C1004992AA /* Colors */,
+				47D1BEA02BC910B8004992AA /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		47D1BE8E2BC8FA40004992AA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE7D2BC8F8E9004992AA /* Balance_Your_LifeApp.swift */,
+				47D1BEB42BC939BB004992AA /* AppDelegate.swift */,
+				47D1BEB62BC93F05004992AA /* SceneDelegate.swift */,
+				47D1BE8F2BC8FAAA004992AA /* Scenes */,
+				47D1BE8D2BC8FA2F004992AA /* Resources */,
+				47D1BE9C2BC90824004992AA /* Common */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		47D1BE8F2BC8FAAA004992AA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE812BC8F8E9004992AA /* Item.swift */,
+				47D1BE7F2BC8F8E9004992AA /* ContentView.swift */,
+				47D1BE902BC8FAB8004992AA /* SplashScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		47D1BE902BC8FAB8004992AA /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE922BC8FADD004992AA /* Coordinator */,
+				47D1BE912BC8FAD0004992AA /* View */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		47D1BE912BC8FAD0004992AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE9A2BC904AE004992AA /* SplashScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47D1BE922BC8FADD004992AA /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		47D1BE952BC9021C004992AA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE832BC8F8EA004992AA /* Images.xcassets */,
+				47D1BE982BC9023F004992AA /* AppImageProtocol.swift */,
+				47D1BE962BC90234004992AA /* AppImage.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		47D1BE9C2BC90824004992AA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE9D2BC90858004992AA /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		47D1BE9D2BC90858004992AA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE9E2BC91019004992AA /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		47D1BEA02BC910B8004992AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BEAA2BC91231004992AA /* Fonts */,
+				47D1BEAB2BC91247004992AA /* AppFontProtocol.swift */,
+				47D1BEAD2BC91351004992AA /* AppFont.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		47D1BEA12BC910C1004992AA /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BE932BC9020D004992AA /* Colors.xcassets */,
+				47D1BEB02BC9193E004992AA /* AppColorProtocol.swift */,
+				47D1BEB22BC91AE0004992AA /* AppColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		47D1BEAA2BC91231004992AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47D1BEA22BC91227004992AA /* SF-Pro-Display-Bold.otf */,
+				47D1BEA32BC91227004992AA /* SF-Pro-Display-Medium.otf */,
+				47D1BEA52BC91227004992AA /* SF-Pro-Display-Regular.otf */,
+				47D1BEA42BC91227004992AA /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47D1BE792BC8F8E9004992AA /* Balance Your Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D1BE8A2BC8F8EA004992AA /* Build configuration list for PBXNativeTarget "Balance Your Life" */;
+			buildPhases = (
+				47D1BE762BC8F8E9004992AA /* Sources */,
+				47D1BE772BC8F8E9004992AA /* Frameworks */,
+				47D1BE782BC8F8E9004992AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Balance Your Life";
+			productName = "Balance Your Life";
+			productReference = 47D1BE7A2BC8F8E9004992AA /* Balance Your Life.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47D1BE722BC8F8E9004992AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					47D1BE792BC8F8E9004992AA = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 47D1BE752BC8F8E9004992AA /* Build configuration list for PBXProject "Balance Your Life" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47D1BE712BC8F8E9004992AA;
+			productRefGroup = 47D1BE7B2BC8F8E9004992AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47D1BE792BC8F8E9004992AA /* Balance Your Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47D1BE782BC8F8E9004992AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D1BEA82BC91227004992AA /* SF-Pro-Display-Semibold.otf in Resources */,
+				47D1BE942BC9020D004992AA /* Colors.xcassets in Resources */,
+				47D1BE872BC8F8EA004992AA /* Preview Assets.xcassets in Resources */,
+				47D1BEA62BC91227004992AA /* SF-Pro-Display-Bold.otf in Resources */,
+				47D1BE842BC8F8EA004992AA /* Images.xcassets in Resources */,
+				47D1BEA92BC91227004992AA /* SF-Pro-Display-Regular.otf in Resources */,
+				47D1BEA72BC91227004992AA /* SF-Pro-Display-Medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47D1BE762BC8F8E9004992AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D1BEB52BC939BB004992AA /* AppDelegate.swift in Sources */,
+				47D1BE992BC9023F004992AA /* AppImageProtocol.swift in Sources */,
+				47D1BE802BC8F8E9004992AA /* ContentView.swift in Sources */,
+				47D1BEAE2BC91351004992AA /* AppFont.swift in Sources */,
+				47D1BEB12BC9193E004992AA /* AppColorProtocol.swift in Sources */,
+				47D1BEAC2BC91247004992AA /* AppFontProtocol.swift in Sources */,
+				47D1BE972BC90234004992AA /* AppImage.swift in Sources */,
+				47D1BE822BC8F8E9004992AA /* Item.swift in Sources */,
+				47D1BEB72BC93F05004992AA /* SceneDelegate.swift in Sources */,
+				47D1BE9F2BC91019004992AA /* Constants.swift in Sources */,
+				47D1BE7E2BC8F8E9004992AA /* Balance_Your_LifeApp.swift in Sources */,
+				47D1BEB32BC91AE0004992AA /* AppColor.swift in Sources */,
+				47D1BE9B2BC904AE004992AA /* SplashScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		47D1BE882BC8F8EA004992AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47D1BE892BC8F8EA004992AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47D1BE8B2BC8F8EA004992AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Balance Your Life/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QVR9UVA7V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Balance-Your-Life-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abgdrv.Balance-Your-Life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47D1BE8C2BC8F8EA004992AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Balance Your Life/Preview Content\"";
+				DEVELOPMENT_TEAM = 9QVR9UVA7V;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Balance-Your-Life-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.abgdrv.Balance-Your-Life";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47D1BE752BC8F8E9004992AA /* Build configuration list for PBXProject "Balance Your Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D1BE882BC8F8EA004992AA /* Debug */,
+				47D1BE892BC8F8EA004992AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47D1BE8A2BC8F8EA004992AA /* Build configuration list for PBXNativeTarget "Balance Your Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D1BE8B2BC8F8EA004992AA /* Debug */,
+				47D1BE8C2BC8F8EA004992AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47D1BE722BC8F8E9004992AA /* Project object */;
+}
