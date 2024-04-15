@@ -15,18 +15,15 @@ final class MainViewModel: ObservableObject {
     
     @Published var createWheelCoordinator: CreateWheelCoordinator?
     
+    @Published var wheels: [Wheel] = []
+    @Published var isSheet: Bool = false
+    @Published var wheel: Wheel = Wheel(categories: [])
+    
     func openCreateWheel() {
         createWheelCoordinator = .init()
     }
     
-    private(set) var wheelCards: [WheelCard] = [
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date()),
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date()),
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date()),
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date()),
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date()),
-        WheelCard(wheelImage: Image(systemName: "plus"), date: Date())
-    ]
+    private(set) var wheelCards: [WheelCard] = []
     
     // MARK: - Object Lifecycle
     
@@ -36,8 +33,9 @@ final class MainViewModel: ObservableObject {
     
     // MARK: - Methods
     
-    func showWheelDetails(card: WheelCard) {
-        
+    func showWheelDetails(wheel: Wheel) {
+        isSheet = true
+        self.wheel = wheel
     }
     
 }

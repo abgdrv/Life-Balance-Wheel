@@ -60,6 +60,7 @@ struct WheelCategoryView: View {
                             }
                             Button(action: {
                                 category.subcategories.append(WheelSubcategory(name: "", percentage: 0))
+                                WheelCategoryView.endEditing()
                             }, label: {
                                 Image(systemName: "plus")
                             })
@@ -92,8 +93,4 @@ struct WheelCategoryView: View {
             }
         }
     }
-}
-
-#Preview {
-    WheelCategoryView(viewModel: CreateWheelViewModel(coordinator: CreateWheelCoordinator()))
 }

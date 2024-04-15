@@ -10,7 +10,8 @@ import SwiftUI
 final class SplashScreenCoordinator {
     
     func showMainFlow() {
-        let view = MainCoordinatorView(viewModel: MainViewModel(coordinator: MainCoordinator()))
+        let vm = MainViewModel(coordinator: MainCoordinator())
+        let view = MainCoordinatorView(viewModel: vm)
         Router.setRootView(view, isAnimated: true)
     }
     

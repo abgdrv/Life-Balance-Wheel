@@ -9,6 +9,13 @@ import SwiftUI
 
 final class Router {
     
+    static func showMainFlow(viewModel: CreateWheelViewModel) {
+        let vm = MainViewModel(coordinator: MainCoordinator())
+        vm.wheels = viewModel.wheels
+        let view = MainCoordinatorView(viewModel: vm)
+        Router.setRootView(view, isAnimated: true)
+    }
+    
     static var window: UIWindow? {
         let scenes = UIApplication.shared.connectedScenes
         let windowScene = scenes.first as? UIWindowScene

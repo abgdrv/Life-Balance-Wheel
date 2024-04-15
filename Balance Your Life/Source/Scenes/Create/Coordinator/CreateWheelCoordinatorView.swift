@@ -50,7 +50,3 @@ struct CreateWheelCoordinatorView: View {
         WheelCoodinatorView(viewModel: viewModel)
     }
 }
-
-#Preview {
-    CreateWheelCoordinatorView(viewModel: CreateWheelViewModel(coordinator: CreateWheelCoordinator()))
-}

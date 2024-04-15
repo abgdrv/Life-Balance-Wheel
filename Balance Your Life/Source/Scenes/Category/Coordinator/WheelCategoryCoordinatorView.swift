@@ -23,7 +23,3 @@ struct WheelCategoryCoordinatorView: View {
         WheelCategoryView(viewModel: viewModel)
     }
 }
-
-#Preview {
-    WheelCategoryCoordinatorView(viewModel: CreateWheelViewModel(coordinator: CreateWheelCoordinator()))
-}

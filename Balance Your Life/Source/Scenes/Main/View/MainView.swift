@@ -27,10 +27,10 @@ struct MainView: View {
         ZStack {
             ScrollView {
                 LazyVStack(spacing: -10) {
-                    ForEach(0..<viewModel.wheelCards.count, id: \.self) { index in
-                        let card = viewModel.wheelCards[index]
-                        WheelCardView(card: card) {
-                            viewModel.showWheelDetails(card: card)
+                    ForEach(0..<viewModel.wheels.count, id: \.self) { index in
+                        let wheel = viewModel.wheels[index]
+                        WheelCardView(wheel: wheel) {
+                            viewModel.showWheelDetails(wheel: wheel)
                         }
                     }
                 }
@@ -45,11 +45,4 @@ struct MainView: View {
             }
         }
     }
-}
-
-
-
-
-#Preview {
-    MainView(viewModel: MainViewModel(coordinator: MainCoordinator()))
 }

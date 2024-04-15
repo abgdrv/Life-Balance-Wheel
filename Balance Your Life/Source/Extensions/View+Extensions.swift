@@ -88,27 +88,25 @@ extension View {
     }
 }
 
-extension View {
-    func snapshot() -> Image? {
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScene = scenes.first as? UIWindowScene
-        guard let window = windowScene?.windows.first else { return nil }
-        let controller = UIHostingController(rootView: self)
-        let size = controller.view.bounds.size
-        controller.view.bounds = CGRect(origin: .zero, size: size)
-        let image = controller.view.asImage()
-        controller.view.bounds = CGRect(origin: .zero, size: size)
-        return image
+public extension View {
+    func snapshot(origin: CGPoint = .zero, size: CGSize) -> UIImage {
+        let window = UIWindow(frame: CGRect(origin: origin, size: size))
+        let hosting = UIHostingController(rootView: self)
+        hosting.view.frame = window.frame
+        window.addSubview(hosting.view)
+        window.makeKeyAndVisible()
+        return hosting.view.renderedImage
     }
 }
 
-extension UIView {
-    func asImage() -> Image? {
-        UIGraphicsBeginImageContextWithOptions(bounds.size, isOpaque, 0)
-        defer { UIGraphicsEndImageContext() }
-        guard let context = UIGraphicsGetCurrentContext() else { return nil }
+private extension UIView {
+    
+    var renderedImage: UIImage {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0.0)
+        let context = UIGraphicsGetCurrentContext()!
         layer.render(in: context)
-        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
-        return Image(uiImage: image)
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
     }
 }

@@ -28,15 +28,19 @@ struct MainCoordinatorView: View {
                 .navigation(item: $viewModel.createWheelCoordinator) { coordinator in
                     createWheelCoordinatorView(coordinator)
                 }
+                .sheet(isPresented: $viewModel.isSheet) {
+                    let vm = CreateWheelViewModel(coordinator: CreateWheelCoordinator())
+                    vm.wheels = viewModel.wheels
+                    vm.categories = viewModel.wheel.categories
+                    return WheelView(viewModel: vm, wheel: viewModel.wheel)
+                }
         }
     }
     
-    @ViewBuilder
+    
     private func createWheelCoordinatorView(_ coordinator: CreateWheelCoordinator) -> some View {
-        CreateWheelCoordinatorView(viewModel: CreateWheelViewModel(coordinator: coordinator))
+        let vm = CreateWheelViewModel(coordinator: coordinator)
+        vm.wheels = viewModel.wheels
+        return CreateWheelCoordinatorView(viewModel: vm)
     }
-}
-
-#Preview {
-    MainCoordinatorView(viewModel: MainViewModel(coordinator: MainCoordinator()))
 }

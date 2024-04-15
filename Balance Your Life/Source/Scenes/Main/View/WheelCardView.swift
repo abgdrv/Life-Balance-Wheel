@@ -11,7 +11,7 @@ struct WheelCardView: View {
     
     // MARK: - Properties
     
-    private let card: WheelCard
+    private let wheel: Wheel
     
     @State var opacityState = 1.0
     
@@ -19,8 +19,8 @@ struct WheelCardView: View {
     
     // MARK: - Object Lifecycle
     
-    init(card: WheelCard, didTap: VoidCallback? = nil) {
-        self.card = card
+    init(wheel: Wheel, didTap: VoidCallback? = nil) {
+        self.wheel = wheel
         self.didTap = didTap
     }
     
@@ -34,11 +34,11 @@ struct WheelCardView: View {
                 .padding()
             
             HStack(spacing: 30) {
-                card.wheelImage
+                wheel.image?
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 50)
-                Text(card.dateString)
+                Text(wheel.dateString)
                     .font(AppFont.regular.s24)
                     .foregroundStyle(.primary)
             }
@@ -59,5 +59,5 @@ struct WheelCardView: View {
 }
 
 #Preview {
-    WheelCardView(card: WheelCard(wheelImage: Image(systemName: "plus"), date: Date()), didTap: nil)
+    WheelCardView(wheel: Wheel(categories: [], image: Image(systemName: "plus")))
 }

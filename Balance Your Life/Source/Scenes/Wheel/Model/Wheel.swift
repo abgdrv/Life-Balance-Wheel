@@ -13,4 +13,8 @@ struct Wheel {
     let date = Date()
     
     var image: Image? = nil
+    
+    var dateString: String {
+        date.toString(format: Constants.DateFormat.weekMonthDay)
+    }
 }

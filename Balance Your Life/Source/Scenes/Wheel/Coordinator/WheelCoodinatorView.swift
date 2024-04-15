@@ -25,7 +25,3 @@ struct WheelCoodinatorView: View {
         WheelView(viewModel: viewModel)
     }
 }
-
-#Preview {
-    WheelCoodinatorView(viewModel: CreateWheelViewModel(coordinator: CreateWheelCoordinator()))
-}
