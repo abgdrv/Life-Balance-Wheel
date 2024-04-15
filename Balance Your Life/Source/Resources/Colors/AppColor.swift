@@ -14,6 +14,7 @@ enum AppColor {
     enum Static: String, AppColorProtocol {
         case black = "black"
         case white = "white"
+        case lightBlue = "light_blue"
     }
     
     // MARK: - Theme

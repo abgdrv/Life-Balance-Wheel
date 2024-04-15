@@ -16,4 +16,15 @@ enum Constants {
         static let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
     }
     
+    // MARK: - String
+    
+    enum Strings {
+        static let version = "version"
+    }
+    
+    // MARK: - DateFormat
+    
+    enum DateFormat {
+        static let weekMonthDay = "EEEE, MMMM dd"
+    }
 }

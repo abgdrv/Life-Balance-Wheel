@@ -11,16 +11,9 @@ struct SplashScreenView: View {
     
     // MARK: - Properties
     
-    @State private var isSpinning = false
+    @ObservedObject var viewModel: SplashScreenViewModel
     
-    private let appLogoSize = 150.0
-    private let startAngle = 0.0
-    private let endAngle = 360.0
-    
-    private let animationDelay = 0.5
-    private let animationDuration = 1.0
-    
-    private let versionString = "version"
+    @State var isSpinning = false
     
     // MARK: - UI
     
@@ -38,11 +31,13 @@ struct SplashScreenView: View {
         AppImage.appLogo.image
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: appLogoSize)
-            .rotationEffect(.degrees(isSpinning ? endAngle : startAngle))
+            .frame(width: viewModel.appLogoSize)
+            .rotationEffect(.degrees(isSpinning
+                                     ? viewModel.endAngle
+                                     : viewModel.startAngle))
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + animationDelay) {
-                    withAnimation(.easeInOut(duration: animationDuration)) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + viewModel.animationDelay) {
+                    withAnimation(.easeInOut(duration: viewModel.animationDuration)) {
                         isSpinning = true
                     }
                 }
@@ -57,7 +52,7 @@ struct SplashScreenView: View {
     private var versionView: some View {
         HStack {
             Text(Constants.App.version)
-            Text(versionString)
+            Text(Constants.Strings.version)
         }
         .font(AppFont.medium.s20)
         .foregroundColor(AppColor.Static.black.color.opacity(0.5))
@@ -65,5 +60,5 @@ struct SplashScreenView: View {
 }
 
 #Preview {
-    SplashScreenView()
+    SplashScreenView(viewModel: SplashScreenViewModel(coordinator: SplashScreenCoordinator()))
 }
