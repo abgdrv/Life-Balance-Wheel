@@ -52,7 +52,3 @@ struct WheelCategoryCardView: View {
         .padding(EdgeInsets(top: 10, leading: 16, bottom: 10, trailing: 16))
     }
 }
-
-#Preview {
-    WheelCategoryCardView(category: WheelCategory(name: "ASDDS", subcategories: [WheelSubcategory(name: "dasdsa", percentage: 34.9)]))
-}

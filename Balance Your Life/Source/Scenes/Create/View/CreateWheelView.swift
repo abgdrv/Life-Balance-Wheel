@@ -47,8 +47,3 @@ struct CreateWheelView: View {
         }
     }
 }
-
-
-#Preview {
-    CreateWheelView(viewModel: CreateWheelViewModel(coordinator: CreateWheelCoordinator()))
-}

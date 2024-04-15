@@ -57,7 +57,3 @@ struct WheelCardView: View {
         }
     }
 }
-
-#Preview {
-    WheelCardView(wheel: Wheel(categories: [], image: Image(systemName: "plus")))
-}

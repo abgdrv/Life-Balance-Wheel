@@ -58,7 +58,3 @@ struct SplashScreenView: View {
         .foregroundColor(AppColor.Static.black.color.opacity(0.5))
     }
 }
-
-#Preview {
-    SplashScreenView(viewModel: SplashScreenViewModel(coordinator: SplashScreenCoordinator()))
-}
